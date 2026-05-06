@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>给已Star的项目写个备注</title>
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="./style/reset.css" />
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="./style/style.css" />
+    <script src="./scripts/jquery-3.7.1.min.js"></script>
+    <script src="./scripts/dexie.min.js"></script>
+</head>
+<body>
+    <h1>给已Star的项目写个备注</h1>
+    <main>
+    <div class="controls">
+        <button class="control-btn" id="exportBtn">导出数据</button>
+        <button class="control-btn" id="importBtn">导入数据</button>
+        <button class="control-btn" id="loadBtn">从repo载入数据</button><br>
+        <button class="control-btn" id="readonly">只读化（用于手机浏览器查找）</button>
+        <input type="file" id="fileInput" accept=".json">
+        <select id="language_filter"></select>
+    </div>
+    <div id="repos"></div>
+	</main>
+	<script src="./scripts/app.js"></script>
+</body>
+</html>

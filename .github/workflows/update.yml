@@ -1,0 +1,40 @@
+name: 获取star的项目
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天UTC 0点运行
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:  # 👈 添加权限配置
+      contents: write  # 允许写入仓库
+    steps:
+      - uses: actions/checkout@v4
+        
+      - name: Debug file structure
+        run: |
+          ls -R
+          pwd
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Run script
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_UNAME: ${{ secrets.GH_UNAME }}
+        run: |
+          cd $GITHUB_WORKSPACE
+          ls scripts/  # 确认脚本存在
+          node scripts/fetchStars.js
+
+      - name: Commit changes
+        run: |
+          git config user.name "longxiao7"
+          git config user.email "nyaa@qq.com"
+          git add ./data/starred_repos.json
+          git commit -m "Update starred repos" || echo "No changes"
+          git push
