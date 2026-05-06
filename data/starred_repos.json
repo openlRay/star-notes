@@ -23,7 +23,7 @@
     "name": "maestro-flow",
     "full_name": "catlog22/maestro-flow",
     "description": "Workflow orchestration CLI with MCP endpoint support and multi-agent dashboard",
-    "stargazers_count": 259,
+    "stargazers_count": 260,
     "language": "TypeScript"
   },
   {
@@ -32,7 +32,7 @@
     "name": "agent-skills",
     "full_name": "addyosmani/agent-skills",
     "description": "Production-grade engineering skills for AI coding agents.",
-    "stargazers_count": 28883,
+    "stargazers_count": 28888,
     "language": "Shell"
   },
   {
@@ -50,7 +50,7 @@
     "name": "t3code",
     "full_name": "pingdotgg/t3code",
     "description": null,
-    "stargazers_count": 10938,
+    "stargazers_count": 10939,
     "language": "TypeScript"
   },
   {
@@ -59,7 +59,7 @@
     "name": "cocoindex-code",
     "full_name": "cocoindex-io/cocoindex-code",
     "description": "A super light-weight embedded code search engine CLI (AST based) that just works - saves 70% token and improves speed for coding agent  🌟 Star if you like it!",
-    "stargazers_count": 1553,
+    "stargazers_count": 1554,
     "language": "Python"
   },
   {
@@ -68,7 +68,7 @@
     "name": "axonhub",
     "full_name": "looplj/axonhub",
     "description": "⚡️ Open-source AI Gateway — Use any SDK to call 100+ LLMs. Built-in failover, load balancing, cost control & end-to-end tracing.",
-    "stargazers_count": 3600,
+    "stargazers_count": 3601,
     "language": "Go"
   },
   {
@@ -95,7 +95,7 @@
     "name": "andrej-karpathy-skills",
     "full_name": "forrestchang/andrej-karpathy-skills",
     "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
-    "stargazers_count": 115024,
+    "stargazers_count": 115038,
     "language": null
   },
   {
@@ -104,7 +104,7 @@
     "name": "markitdown",
     "full_name": "microsoft/markitdown",
     "description": "Python tool for converting files and office documents to Markdown.",
-    "stargazers_count": 120887,
+    "stargazers_count": 120888,
     "language": "Python"
   },
   {
@@ -113,7 +113,7 @@
     "name": "Archon",
     "full_name": "coleam00/Archon",
     "description": "The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable.",
-    "stargazers_count": 20869,
+    "stargazers_count": 20868,
     "language": "TypeScript"
   },
   {
@@ -131,7 +131,7 @@
     "name": "multica",
     "full_name": "multica-ai/multica",
     "description": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.",
-    "stargazers_count": 25047,
+    "stargazers_count": 25050,
     "language": "TypeScript"
   },
   {
@@ -149,7 +149,7 @@
     "name": "gbrain",
     "full_name": "garrytan/gbrain",
     "description": "Garry's Opinionated OpenClaw/Hermes Agent Brain",
-    "stargazers_count": 13331,
+    "stargazers_count": 13334,
     "language": "TypeScript"
   },
   {
@@ -167,7 +167,7 @@
     "name": "awesome-design-md",
     "full_name": "VoltAgent/awesome-design-md",
     "description": "A collection of DESIGN.md files inspired by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
-    "stargazers_count": 71735,
+    "stargazers_count": 71736,
     "language": null
   },
   {
@@ -185,7 +185,7 @@
     "name": "agent-governance-toolkit",
     "full_name": "microsoft/agent-governance-toolkit",
     "description": "AI Agent Governance Toolkit — Policy enforcement, zero-trust identity, execution sandboxing, and reliability engineering for autonomous AI agents. Covers 10/10 OWASP Agentic Top 10.",
-    "stargazers_count": 1421,
+    "stargazers_count": 1422,
     "language": "Python"
   },
   {
@@ -203,7 +203,7 @@
     "name": "codex-plugin-cc",
     "full_name": "openai/codex-plugin-cc",
     "description": "Use Codex from Claude Code to review code or delegate tasks.",
-    "stargazers_count": 17636,
+    "stargazers_count": 17637,
     "language": "JavaScript"
   },
   {
@@ -221,7 +221,7 @@
     "name": "oh-my-claudecode",
     "full_name": "Yeachan-Heo/oh-my-claudecode",
     "description": "Teams-first Multi-agent orchestration for Claude Code",
-    "stargazers_count": 32664,
+    "stargazers_count": 32665,
     "language": "TypeScript"
   },
   {
@@ -248,7 +248,7 @@
     "name": "baoyu-skills",
     "full_name": "JimLiu/baoyu-skills",
     "description": null,
-    "stargazers_count": 17179,
+    "stargazers_count": 17180,
     "language": "TypeScript"
   },
   {
@@ -266,7 +266,7 @@
     "name": "agentskills",
     "full_name": "agentskills/agentskills",
     "description": "Specification and documentation for Agent Skills",
-    "stargazers_count": 17973,
+    "stargazers_count": 17975,
     "language": "Python"
   },
   {
@@ -275,7 +275,7 @@
     "name": "hermes-agent",
     "full_name": "NousResearch/hermes-agent",
     "description": "The agent that grows with you",
-    "stargazers_count": 134761,
+    "stargazers_count": 134774,
     "language": "Python"
   },
   {
@@ -284,7 +284,7 @@
     "name": "leetcode-master",
     "full_name": "youngyangyang04/leetcode-master",
     "description": "《代码随想录》LeetCode 刷题攻略：200道经典题目刷题顺序，共60w字的详细图解，视频难点剖析，50余张思维导图，支持C++，Java，Python，Go，JavaScript等多语言版本，从此算法学习不再迷茫！🔥🔥 来看看，你会发现相见恨晚！🚀 ",
-    "stargazers_count": 61301,
+    "stargazers_count": 61302,
     "language": "Shell"
   },
   {
@@ -347,7 +347,7 @@
     "name": "openclaude",
     "full_name": "Gitlawb/openclaude",
     "description": "runs anywhere. uses anything",
-    "stargazers_count": 25962,
+    "stargazers_count": 25963,
     "language": "TypeScript"
   },
   {
@@ -356,7 +356,7 @@
     "name": "claw-code",
     "full_name": "ultraworkers/claw-code",
     "description": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
-    "stargazers_count": 190271,
+    "stargazers_count": 190272,
     "language": "Rust"
   },
   {
@@ -419,7 +419,7 @@
     "name": "chrome-devtools-mcp",
     "full_name": "ChromeDevTools/chrome-devtools-mcp",
     "description": "Chrome DevTools for coding agents",
-    "stargazers_count": 38220,
+    "stargazers_count": 38221,
     "language": "TypeScript"
   },
   {
@@ -437,7 +437,7 @@
     "name": "rtk",
     "full_name": "rtk-ai/rtk",
     "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
-    "stargazers_count": 42431,
+    "stargazers_count": 42436,
     "language": "Rust"
   },
   {
@@ -563,7 +563,7 @@
     "name": "gstack",
     "full_name": "garrytan/gstack",
     "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
-    "stargazers_count": 90039,
+    "stargazers_count": 90048,
     "language": "TypeScript"
   },
   {
@@ -572,7 +572,7 @@
     "name": "cc-switch",
     "full_name": "farion1231/cc-switch",
     "description": "A cross-platform desktop All-in-One assistant tool for Claude Code, Codex, OpenCode, openclaw & Gemini CLI.",
-    "stargazers_count": 60381,
+    "stargazers_count": 60398,
     "language": "Rust"
   },
   {
@@ -581,7 +581,7 @@
     "name": "get-shit-done",
     "full_name": "gsd-build/get-shit-done",
     "description": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES.",
-    "stargazers_count": 60306,
+    "stargazers_count": 60307,
     "language": "JavaScript"
   },
   {
@@ -716,7 +716,7 @@
     "name": "paperclip",
     "full_name": "paperclipai/paperclip",
     "description": "Open-source orchestration for zero-human companies",
-    "stargazers_count": 62796,
+    "stargazers_count": 62797,
     "language": "TypeScript"
   },
   {
@@ -725,7 +725,7 @@
     "name": "symphony",
     "full_name": "openai/symphony",
     "description": "Symphony turns project work into isolated, autonomous implementation runs, allowing teams to manage work instead of supervising coding agents.",
-    "stargazers_count": 21857,
+    "stargazers_count": 21858,
     "language": "Elixir"
   },
   {
@@ -761,7 +761,7 @@
     "name": "Claude-Code-Workflow",
     "full_name": "catlog22/Claude-Code-Workflow",
     "description": " JSON-driven multi-agent  cadence-team development framework with   intelligent CLI orchestration (Gemini/Qwen/Codex),   context-first architecture, and automated workflow   execution",
-    "stargazers_count": 1964,
+    "stargazers_count": 1965,
     "language": "TypeScript"
   },
   {
@@ -824,7 +824,7 @@
     "name": "everything-claude-code",
     "full_name": "affaan-m/everything-claude-code",
     "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-    "stargazers_count": 174201,
+    "stargazers_count": 174205,
     "language": "JavaScript"
   },
   {
@@ -842,7 +842,7 @@
     "name": "ai-guide",
     "full_name": "liyupi/ai-guide",
     "description": "程序员鱼皮的 AI 资源大全 + Vibe Coding 零基础教程，分享 OpenClaw 保姆级教程、大模型玩法（DeepSeek / GPT / Gemini / Claude）、最新 AI 资讯、Prompt 提示词大全、AI 知识百科（Agent Skills / RAG / MCP / A2A）、AI 编程教程（Harness Engineering）、AI 工具用法（Cursor / Claude Code / TRAE / Codex / Copilot）、AI 开发框架教程（Spring AI / LangChain）、AI 产品变现指南，帮你快速掌握 AI 技术，走在时代前沿。本项目为开源文档，已升级为鱼皮 AI 导航网站",
-    "stargazers_count": 13139,
+    "stargazers_count": 13140,
     "language": "JavaScript"
   },
   {
@@ -851,7 +851,7 @@
     "name": "learn-claude-code",
     "full_name": "shareAI-lab/learn-claude-code",
     "description": "Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1",
-    "stargazers_count": 58359,
+    "stargazers_count": 58361,
     "language": "TypeScript"
   },
   {
@@ -860,7 +860,7 @@
     "name": "agent-browser",
     "full_name": "vercel-labs/agent-browser",
     "description": "Browser automation CLI for AI agents",
-    "stargazers_count": 31856,
+    "stargazers_count": 31857,
     "language": "Rust"
   },
   {
@@ -896,7 +896,7 @@
     "name": "openclaw",
     "full_name": "openclaw/openclaw",
     "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
-    "stargazers_count": 368800,
+    "stargazers_count": 368803,
     "language": "TypeScript"
   },
   {
@@ -914,7 +914,7 @@
     "name": "superpowers",
     "full_name": "obra/superpowers",
     "description": "An agentic skills framework & software development methodology that works.",
-    "stargazers_count": 179804,
+    "stargazers_count": 179806,
     "language": "Shell"
   },
   {
@@ -959,7 +959,7 @@
     "name": "daily_stock_analysis",
     "full_name": "ZhuLinsen/daily_stock_analysis",
     "description": "LLM驱动的 A/H/美股智能分析器：多数据源行情 + 实时新闻 + LLM决策仪表盘 + 多渠道推送，零成本定时运行，纯白嫖. LLM-powered stock analysis system for A/H/US markets.",
-    "stargazers_count": 34165,
+    "stargazers_count": 34166,
     "language": "Python"
   },
   {
@@ -1040,7 +1040,7 @@
     "name": "oh-my-openagent",
     "full_name": "code-yeongyu/oh-my-openagent",
     "description": "omo; the best agent harness - previously oh-my-opencode",
-    "stargazers_count": 56026,
+    "stargazers_count": 56027,
     "language": "TypeScript"
   },
   {
@@ -1076,7 +1076,7 @@
     "name": "ui-ux-pro-max-skill",
     "full_name": "nextlevelbuilder/ui-ux-pro-max-skill",
     "description": "An AI SKILL that provide design intelligence for building professional UI/UX multiple platforms",
-    "stargazers_count": 74353,
+    "stargazers_count": 74355,
     "language": "Python"
   },
   {
@@ -1085,7 +1085,7 @@
     "name": "opencode",
     "full_name": "anomalyco/opencode",
     "description": "The open source coding agent.",
-    "stargazers_count": 155471,
+    "stargazers_count": 155473,
     "language": "TypeScript"
   },
   {
@@ -1112,7 +1112,7 @@
     "name": "all-in-rag",
     "full_name": "datawhalechina/all-in-rag",
     "description": "🔍大模型应用开发实战一：RAG 技术全栈指南，在线阅读地址：https://datawhalechina.github.io/all-in-rag/",
-    "stargazers_count": 7018,
+    "stargazers_count": 7019,
     "language": "Python"
   },
   {
@@ -1130,7 +1130,7 @@
     "name": "claude-mem",
     "full_name": "thedotmack/claude-mem",
     "description": "A Claude Code plugin that automatically captures everything Claude does during your coding sessions, compresses it with AI (using Claude's agent-sdk), and injects relevant context back into future sessions.",
-    "stargazers_count": 72656,
+    "stargazers_count": 72659,
     "language": "TypeScript"
   },
   {
@@ -1166,7 +1166,7 @@
     "name": "TrendRadar",
     "full_name": "sansan0/TrendRadar",
     "description": "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 +  RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 +  AI 分析简报直推手机，也支持接入 MCP 架构，赋能 AI 自然语言对话分析、情感洞察与趋势预测等。支持 Docker ，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送。",
-    "stargazers_count": 56735,
+    "stargazers_count": 56736,
     "language": "Python"
   },
   {
@@ -1247,7 +1247,7 @@
     "name": "hello-agents",
     "full_name": "datawhalechina/hello-agents",
     "description": "📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程",
-    "stargazers_count": 42819,
+    "stargazers_count": 42821,
     "language": "Python"
   },
   {
@@ -1328,7 +1328,7 @@
     "name": "superdesign",
     "full_name": "superdesigndev/superdesign",
     "description": "AI Product Design Agent - Open Source",
-    "stargazers_count": 6389,
+    "stargazers_count": 6390,
     "language": "TypeScript"
   },
   {
@@ -1337,7 +1337,7 @@
     "name": "dify",
     "full_name": "langgenius/dify",
     "description": "Production-ready platform for agentic workflow development.",
-    "stargazers_count": 140235,
+    "stargazers_count": 140236,
     "language": "TypeScript"
   },
   {
@@ -1355,7 +1355,7 @@
     "name": "deepwiki-open",
     "full_name": "AsyncFuncAI/deepwiki-open",
     "description": "Open Source DeepWiki: AI-Powered Wiki Generator for GitHub/Gitlab/Bitbucket Repositories. Join the discord: https://discord.gg/gMwThUMeme",
-    "stargazers_count": 16118,
+    "stargazers_count": 16119,
     "language": "Python"
   },
   {
@@ -1427,7 +1427,7 @@
     "name": "claude-code",
     "full_name": "anthropics/claude-code",
     "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
-    "stargazers_count": 120765,
+    "stargazers_count": 120766,
     "language": "Shell"
   },
   {
@@ -1463,7 +1463,7 @@
     "name": "langchain",
     "full_name": "langchain-ai/langchain",
     "description": "The agent engineering platform. Available in TypeScript!",
-    "stargazers_count": 135892,
+    "stargazers_count": 135891,
     "language": "Python"
   },
   {
@@ -1643,7 +1643,7 @@
     "name": "hello-algo",
     "full_name": "krahets/hello-algo",
     "description": "《Hello 算法》：动画图解、一键运行的数据结构与算法教程。支持简中、繁中、English、日本語，提供 Python, Java, C++, C, C#, JS, Go, Swift, Rust, Ruby, Kotlin, TS, Dart 等代码实现",
-    "stargazers_count": 125920,
+    "stargazers_count": 125922,
     "language": "Java"
   },
   {
@@ -1922,7 +1922,7 @@
     "name": "hexo-theme-butterfly",
     "full_name": "jerryc127/hexo-theme-butterfly",
     "description": " 🦋 A Hexo Theme: Butterfly",
-    "stargazers_count": 8278,
+    "stargazers_count": 8279,
     "language": "JavaScript"
   },
   {
@@ -1931,7 +1931,7 @@
     "name": "hexo-theme-icarus",
     "full_name": "ppoffice/hexo-theme-icarus",
     "description": "A simple, delicate, and modern theme for the static site generator Hexo.",
-    "stargazers_count": 6661,
+    "stargazers_count": 6662,
     "language": "JavaScript"
   },
   {
