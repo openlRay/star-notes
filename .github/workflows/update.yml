@@ -10,7 +10,7 @@ jobs:
     permissions:  # 👈 添加权限配置
       contents: write  # 允许写入仓库
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         
       - name: Debug file structure
         run: |
@@ -18,9 +18,9 @@ jobs:
           pwd
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v6
         with:
-          node-version: '20'
+          node-version: '24'
 
       - name: Run script
         env:
