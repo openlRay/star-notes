@@ -10,18 +10,67 @@
     <script src="./scripts/dexie.min.js"></script>
 </head>
 <body>
-    <h1>给已Star的项目写个备注</h1>
     <main>
-    <div class="controls">
-        <button class="control-btn" id="exportBtn">导出数据</button>
-        <button class="control-btn" id="importBtn">导入数据</button>
-        <button class="control-btn" id="loadBtn">从repo载入数据</button><br>
-        <button class="control-btn" id="readonly">只读化（用于手机浏览器查找）</button>
-        <input type="file" id="fileInput" accept=".json">
-        <select id="language_filter"></select>
+        <form class="search-bar" id="searchForm">
+            <label class="search-field" for="searchInput">
+                <span class="search-icon">⌕</span>
+                <input id="searchInput" type="search" autocomplete="off" placeholder="Search stars">
+            </label>
+            <button class="search-btn" type="submit">Search</button>
+            <span class="search-divider" aria-hidden="true"></span>
+            <button class="secondary-btn" id="syncRemoteBtn" type="button">同步远端</button>
+            <button class="secondary-btn" id="configBtn" type="button">配置</button>
+            <button class="control-btn" id="saveAllBtn" type="button" disabled>保存至远端</button>
+        </form>
+        <div id="repos"></div>
+    </main>
+    <div class="toast" id="toast" aria-live="polite"></div>
+    <div class="modal-backdrop" id="noteModal" aria-hidden="true">
+        <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="noteModalTitle">
+            <div class="modal-header">
+                <div>
+                    <p class="eyebrow">NOTE</p>
+                    <h2 id="noteModalTitle">修改备注</h2>
+                    <p class="modal-subtitle" id="noteRepoName"></p>
+                </div>
+                <button class="icon-btn" data-close-modal="noteModal" aria-label="关闭备注弹框">×</button>
+            </div>
+            <textarea class="modal-textarea" id="noteEditor"></textarea>
+            <div class="modal-actions">
+                <button class="control-btn" id="saveRemoteBtn">保存到远端</button>
+            </div>
+        </div>
     </div>
-    <div id="repos"></div>
-	</main>
+    <div class="modal-backdrop" id="configModal" aria-hidden="true">
+        <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="configModalTitle">
+            <div class="modal-header">
+                <div>
+                    <p class="eyebrow">CONFIG</p>
+                    <h2 id="configModalTitle">远端提交配置</h2>
+                </div>
+                <button class="icon-btn" data-close-modal="configModal" aria-label="关闭配置弹框">×</button>
+            </div>
+            <label class="field-label" for="githubToken">GitHub personal token</label>
+            <input class="text-input" id="githubToken" type="password" autocomplete="off" placeholder="需要 repo contents 写入权限">
+            <div class="config-grid">
+                <label>
+                    <span class="field-label">Owner</span>
+                    <input class="text-input" id="repoOwner" type="text" placeholder="请输入github用户名">
+                </label>
+                <label>
+                    <span class="field-label">Repo</span>
+                    <input class="text-input" id="repoName" type="text" placeholder="请输入github仓库名">
+                </label>
+                <label>
+                    <span class="field-label">Branch</span>
+                    <input class="text-input" id="repoBranch" type="text" value="main">
+                </label>
+            </div>
+            <div class="modal-actions">
+                <button class="control-btn" id="saveConfigBtn">保存配置</button>
+            </div>
+        </div>
+    </div>
 	<script src="./scripts/app.js"></script>
 </body>
 </html>
