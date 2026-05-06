@@ -248,13 +248,14 @@ $(document).ready(function() {
             const id = repo.id.toString();
             const note = noteText(id);
             const noteClass = note.trim() ? '' : ' is-empty';
+            const description = repo.description || 'No description';
 
             return `
                 <article class="repo" data-id="${id}" data-name="${escapeHtml(repo.full_name)}">
                     <button class="edit-note-btn" type="button" data-id="${id}">修改备注</button>
                     <div class="repo-main">
                         <h3><a href="${escapeHtml(repo.html_url)}" target="_blank">${escapeHtml(repo.full_name)}</a></h3>
-                        <p class="repo-description">${escapeHtml(repo.description || 'No description')}</p>
+                        <p class="repo-description" data-tooltip="${escapeHtml(description)}">${escapeHtml(description)}</p>
                         <div class="repo-meta">
                             <span>Stars: ${escapeHtml(repo.stargazers_count)}</span>
                             <span>${escapeHtml(repo.language || 'Unknown')}</span>
@@ -266,8 +267,6 @@ $(document).ready(function() {
         }).join('');
 
         $("#repos").html(html);
-        $("#saveAllBtn").prop("disabled", false);
-        $("#syncRemoteBtn").prop("disabled", false);
     }
 
     function normalizeSearchText(value) {
@@ -285,9 +284,31 @@ $(document).ready(function() {
         renderRepos(allRepos.filter(function(repo) {
             const name = normalizeSearchText(repo.full_name);
             const description = normalizeSearchText(repo.description);
+            const note = normalizeSearchText(noteText(repo.id));
 
-            return name.includes(keyword) || description.includes(keyword);
+            return name.includes(keyword) || description.includes(keyword) || note.includes(keyword);
         }));
+    }
+
+    function showTooltip($target) {
+        const text = $target.data("tooltip");
+
+        if (!text) return;
+
+        const rect = $target[0].getBoundingClientRect();
+        const $tooltip = $("#tooltip");
+
+        $tooltip
+            .text(text)
+            .addClass("is-visible")
+            .css({
+                left: Math.min(window.innerWidth - 16, Math.max(16, rect.left + rect.width / 2)),
+                top: rect.bottom + 8
+            });
+    }
+
+    function hideTooltip() {
+        $("#tooltip").removeClass("is-visible");
     }
 
     Promise.all([
@@ -336,44 +357,6 @@ $(document).ready(function() {
         }
     });
 
-    $("#saveAllBtn").click(async function() {
-        const $button = $(this);
-
-        try {
-            $button.prop("disabled", true).text("提交中");
-            await commitNotesToGitHub();
-            showToast("全部备注已提交到远端", "saved");
-        } catch (error) {
-            if (error.message !== "缺少 GitHub 提交配置") {
-                console.error('远端保存失败:', error);
-            }
-            showToast(error.message || "远端保存失败", "error");
-        } finally {
-            $button.prop("disabled", false).text("保存至远端");
-        }
-    });
-
-    $("#syncRemoteBtn").click(async function() {
-        const $button = $(this);
-
-        try {
-            $button.prop("disabled", true).text("同步中");
-            const config = await requireGitHubConfig();
-            const remote = await fetchNotesFromGitHub(config);
-
-            replaceNotes(remote.notes);
-            applySearch();
-            showToast("远端备注已同步", "saved");
-        } catch (error) {
-            if (error.message !== "缺少 GitHub 提交配置") {
-                console.error('同步失败:', error);
-            }
-            showToast(error.message || "同步失败", "error");
-        } finally {
-            $button.prop("disabled", false).text("同步远端");
-        }
-    });
-
     $("#configBtn").click(async function() {
         await loadConfigToForm();
         openModal("configModal");
@@ -386,6 +369,14 @@ $(document).ready(function() {
 
     $("#searchInput").on("input", function() {
         applySearch();
+    });
+
+    $("#repos").on("mouseenter focusin", ".repo-description", function() {
+        showTooltip($(this));
+    });
+
+    $("#repos").on("mouseleave focusout", ".repo-description", function() {
+        hideTooltip();
     });
 
     $("#saveConfigBtn").click(function() {

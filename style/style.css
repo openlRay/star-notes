@@ -57,7 +57,7 @@ textarea {
     top: 0;
     z-index: 10;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto 1px auto auto auto;
+    grid-template-columns: minmax(0, 1fr) auto 1px auto;
     align-items: center;
     gap: 8px;
     margin-bottom: 12px;
@@ -164,6 +164,7 @@ textarea {
     min-height: 40px;
     overflow: hidden;
     color: var(--color-muted);
+    cursor: default;
     font-size: 13px;
     line-height: 1.5;
     -webkit-box-orient: vertical;
@@ -259,6 +260,41 @@ textarea {
 
 .toast[data-status="error"] {
     color: #ffffff;
+}
+
+.tooltip {
+    position: fixed;
+    z-index: 50;
+    width: max-content;
+    max-width: min(420px, calc(100vw - 32px));
+    border-radius: 4px;
+    background: #303133;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.55;
+    opacity: 0;
+    padding: 8px 11px;
+    pointer-events: none;
+    transform: translate(-50%, 4px);
+    transition: opacity 120ms ease, transform 120ms ease;
+    word-break: break-word;
+}
+
+.tooltip::before {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: #303133;
+    content: "";
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.tooltip.is-visible {
+    opacity: 1;
+    transform: translate(-50%, 0);
 }
 
 .control-btn,
