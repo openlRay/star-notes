@@ -1,7 +1,7 @@
 name: 获取star的项目
 on:
   schedule:
-    - cron: '0 0 * * *'  # 每天UTC 0点运行
+    - cron: '17 16 * * *'  # 每天北京时间 00:17 运行（UTC 16:17）
   workflow_dispatch:
 
 jobs:
